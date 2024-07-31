@@ -1,0 +1,253 @@
+.popup-add-board-form-card {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  overflow-x: hidden;
+  align-items: flex-start;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  .popup-add-board-outer {
+    background-color: transparent;
+    border: none;
+    margin-top: 24px;
+    padding: 24px;
+    width: auto;
+    border-radius: 2px;
+    margin: 48px 0 80px;
+    overflow: hidden;
+    position: relative;
+    z-index: 25;
+    .popup-add-board-inner {
+      color: #172b4d;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+  .create-board-form {
+    width: 520x;
+    margin: 0 auto;
+    .create-board-form-container {
+      margin: 0 auto;
+      display: flex;
+      width: 520px;
+      .create-board-tile {
+        background-color: transparent;
+        box-sizing: border-box;
+        height: 180px;
+        margin: 0;
+        padding: 10px 10px 10px 16px;
+        position: relative;
+        width: 406px;
+        border-radius: 3px;
+        display: block;
+        background-size: cover;
+        background-position: 50%;
+        color: #fff;
+        line-height: 20px;
+        text-decoration: none;
+        margin-right: 16px;
+        .menu {
+          overflow-y: auto !important;
+          overflow-x: auto !important;
+          max-height: 120px !important;
+        }
+      }
+      .create-board-popup-close-btn {
+        // display: inline-block;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        right: -2px;
+        top: -2px;
+        z-index: 2;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        color: inherit;
+        padding: 0;
+        text-decoration: none;
+        border-radius: 3px;
+        line-height: 20px;
+        // display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        width: 32px;
+        font-size: 18px;
+        font-family: "Orbitron", sans-serif;
+        &:active {
+          box-shadow: none;
+          border: transparent;
+        }
+        &:hover {
+          box-shadow: none;
+          border: transparent;
+        }
+        &:focus {
+          box-shadow: none;
+          border: transparent;
+        }
+      }
+      .board-pop-up-input {
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0;
+        min-height: 0;
+        outline: 0;
+        width: calc(100% - 18px - 16px);
+        position: relative;
+        left: -8px;
+        padding: 2px 8px;
+        box-shadow: none;
+        border-radius: 3px;
+        display: block;
+        transition-property: background-color, border-color, box-shadow;
+        transition-duration: 85ms;
+        transition-timing-function: ease;
+        &:hover {
+          background: hsla(0, 0%, 100%, 0.15);
+          //   border-radius: 3px;
+        }
+        &:focus {
+          background: hsla(0, 0%, 100%, 0.3);
+          //   outline: 0;
+        }
+      }
+
+      .add-board-private-btn {
+        font-family: inherit;
+        position: relative;
+        left: -8px;
+        padding: 2px 8px;
+        box-shadow: none;
+        align-content: center;
+        // align-items: center;
+        background: transparent;
+        color: #fff;
+        display: flex;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        min-height: 0;
+        text-align: left;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        .icon {
+          color: #fff !important;
+        }
+        &:hover {
+          background: hsla(0, 0%, 100%, 0.15);
+          //   border-radius: 3px;
+        }
+        &:focus {
+          background: transparent;
+          outline: none;
+          border: none;
+          //   outline: 0;
+        }
+        &:active {
+          background: transparent;
+          outline: none;
+          border: none;
+        }
+      }
+      .create-board-background {
+        height: 96px;
+        margin-left: 24px;
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+      }
+      .create-board-background-item {
+        height: 28px;
+        width: 28px;
+        margin-bottom: 6px;
+        list-style: none;
+      }
+      .create-board-bg-item-btn {
+        background: none;
+        background-color: #fff;
+        background-position: 50%;
+        background-size: cover;
+        box-shadow: none;
+        align-items: center;
+        border-radius: 3px;
+        color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+        min-height: 0;
+        padding: 0;
+        position: relative;
+        line-height: 0;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        &:hover {
+          opacity: 0.15;
+          //   border-radius: 3px;
+        }
+        &:focus {
+          opacity: 0.3;
+          outline: none;
+          border: none;
+          //   outline: 0;
+        }
+      }
+    }
+    .action-items {
+      display: flex;
+      .add-board-submit-btn {
+        font-family: inherit;
+        background-color: #5aac44;
+        box-shadow: none;
+        border: none;
+        color: #fff;
+        margin-bottom: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 3px;
+        display: inline-block;
+        line-height: 20px;
+        padding: 6px 12px;
+        position: relative;
+        font-weight: 400;
+        margin: 8px 4px 0 0;
+        text-align: center;
+        &:active &:enabled {
+          box-shadow: none;
+          border: none;
+          color: #6d737c;
+          // cursor: not-allowed;
+          // background-color: #f4f5f7;
+        }
+        &:hover &:enabled {
+          box-shadow: none;
+          border: none;
+          color: #4e525a;
+          // cursor: not-allowed;
+          // background-color: #d2d4d8;
+        }
+        &:disabled {
+          background-color: #f4f5f7;
+          color: rgb(161, 157, 157);
+        }
+      }
+    }
+  }
+}
